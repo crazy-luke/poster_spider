@@ -1,0 +1,7 @@
+
+items = response.css('div.item')
+
+title = item.css('span.title::text').get()
+img = item.css('img::attr(src)').get()
+
+next_page = response.css('span.next').css('a::attr(href)').get()
