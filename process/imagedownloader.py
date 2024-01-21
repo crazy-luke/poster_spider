@@ -23,7 +23,7 @@ class ImageDownloader():
         for i, item in df.iterrows():
             urls.append(item[1])
         self.__download(urls)
-        print("download completed, total: {urls.count}")
+        print(f"download completed, total: {urls.count}")
 
 
 if __name__ == '__main__':
